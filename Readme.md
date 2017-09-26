@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александра Ларина](https://up.htmlacademy.ru/adaptive/12/user/422049).
-* Наставник: `Неизвестно`.
+* Наставник: `Анастасия Мусаэльян`.
 
 ---
 
