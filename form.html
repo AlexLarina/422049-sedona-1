@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona-mobile</title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+        <a class="main-nav__logo">
+          <img src="http://placehold.it" alt="sedona-logo">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--hidden">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="phomo.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <main class="page-main">
+      <section class="welcome-inner">
+          <img src="http://placehold.it" alt="Sedona-welcome">
+      </section>
+
+      <section class="form">
+        <div class="form__wrapper">
+          <h1 class="form__title">Оставьте свой отзыв</h1>
+          <h2 class="form__description">Помогите нашим отелям стать лучше!
+          Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h2>
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Представьтесь:</legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label>Имя<sup>*</sup>
+                    <input class="form__text" type="text" name="name" value="Петр">
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label>Фамилия<sup>*</sup>
+                    <input class="form__text" type="text" name="surname" value="Иванов">
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label>Отчество
+                    <input class="form__text" type="text" name="patronymic" value="Александрович">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Контактная информация:</legend>
+              <li class="form__item">
+                <label>Контактный телефон<sup>*</sup>:
+                  <input class="form__text" type="text" name="phone" value="Введите телефон">
+                </label>
+              </li>
+              <li class="form__item">
+                <label>Электронная почта<sup>*</sup>:
+                  <input class="form__text" type="text" name="email" value="Введите e-mail">
+                </label>
+              </li>
+            </fieldset>
+            <fieldset>
+              <legend>Ваше общее впечатление:</legend>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="radio" name="positive-opinion">
+                Скорее положительное</label>
+              </li>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="radio" name="negative-opinion">
+                Скорее отрицательное</label>
+              </li>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="radio" name="neutral-opinion">
+                Затрудняюсь ответить</label>
+              </li>
+            </fieldset>
+            <fieldset>
+              <legend>Посещенные достопримечательности:</legend>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="checkbox" name="diablo-bridge" checked>
+                Мост Дьявола</label>
+              </li>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="checkbox" name="park" checked>
+                Слайд-парк</label>
+              </li>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="checkbox" name="mountain">
+                Гора Колокол</label>
+              </li>
+              <li class="form__item">
+                <label>
+                  <input class="form__text" type="checkbox" name="red-mountain" checked>
+                Красные скалы</label>
+              </li>
+            </fieldset>
+            <fieldset>
+              <legend>Опишите свои эмоции:</legend>
+              <textarea name="form__comment" rows="5">Опишите подробно все свои восторги</textarea>
+            </fieldset>
+            <button class="form__button" type="submit">Отправить отзыв</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag hashtag">
+        <b class="hashtag__title">#VisitSedona</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Youtube</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+      </div>
+    </footer>
+  </body>
+</html>
