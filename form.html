@@ -6,12 +6,12 @@
   </head>
 
   <body>
-    <div class="wrapper"
+    <div class="wrapper">
     <header class="header">
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <a class="main-nav__logo">
-          <img src="http://placehold.it" alt="sedona-logo">
+          <img class="main-nav__logo-img" src="http://placehold.it" alt="sedona-logo">
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -40,7 +40,7 @@
           <h1 class="form__title">Оставьте свой отзыв</h1>
           <p class="form__description">Помогите нашим отелям стать лучше!
           Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          <form method="get" action="https://echo.htmlacademy.ru">
+          <form class="form__content" method="get" action="https://echo.htmlacademy.ru">
             <div class="form__name">
               <legend>Представьтесь:</legend>
               <ul class="form__list">
@@ -119,12 +119,10 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__hashtag hashtag">
-        <b class="hashtag__title">#VisitSedona</b>
-      </div>
+      <b class="footer__hashtag">#VisitSedona</b>
       <div class="footer__social social">
             <a class="social__link social__link--twitter" href="#">Twitter</a>
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook</a>
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
             <a class="social__link social__link--youtube" href="#">Youtube</a>
       </div>
       <div class="footer__copyright copyright">
@@ -132,6 +130,19 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+
+    <section class="modal modal--error">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__message">Проверьте поля, выделенные красным, скорее всего
+      Вы забыли их заполнить</p>
+      <button class="button modal__button" type="button">ОК</button>
+    </section>
+    <section class="modal modal--success">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__message">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам.
+      В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="button modal__button" type="button">Закрыть окно</button>
+    </section>
   </div>
   </body>
 </html>
