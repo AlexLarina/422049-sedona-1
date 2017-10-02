@@ -2,11 +2,126 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Sedona-mobile</title>
   </head>
+
   <body>
+    <header class="header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img src="http://placehold.it" alt="sedona-logo">
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="phomo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://up.htmlacademy.ru/adaptive/12">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <main class="page-main">
+      <section class="intro intro--index">
+          <img src="http://placehold.it" alt="Sedona-welcome">
+      </section>
 
+      <section class="reasons">
+        <h1 class="reasons__main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="reasons__main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="reasons__row reasons__row--blue">
+          <div class="reasons__item">
+            <h2 class="reasons__title">Настоящий городок</h2>
+            <span class="reasons__number">№ 1</span>
+            <p class="reasons__description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <div class="reasons__item reasons__item--image">
+            <img class="reasons__img" src="http://placehold.it" alt="Real-city">
+          </div>
+        </div>
+
+        <div class="reason__row">
+          <div class="reasons__item reasons__item--icon reasons__item--icon-home">
+            <h2 class="reasons__title">Жилье</h2>
+            <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="reasons__item reasons__item--icon reasons__item--icon-food">
+            <h2 class="reasons__title">Еда</h2>
+            <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="reasons__item reasons__item--icon reasons__item--icon-gifts">
+            <h2 class="reasons__title">Сувениры</h2>
+            <p class="reasons__description">Не только китайского, но и местного производства!</p>
+          </div>
+        </div>
+
+        <div class="reasons__row reasons__row--blue">
+          <div class="reasons__item">
+            <h2 class="reasons__title">Там есть мост дьявола</h2>
+            <span class="reasons__number">№ 2</span>
+            <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+          <div class="reasons__item reasons__item--image">
+            <img class="reasons__img" src="http://placehold.it" alt="Diablo-bridge">
+          </div>
+        </div>
+
+        <div class="reasons__row reasons__row--grey">
+          <div class="reasons__item">
+            <h2 class="reasons__title">Небольшая площадь</h2>
+            <span class="reasons__number">№ 3</span>
+            <p class="reasons__description">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="reasons__item">
+            <h2 class="reasons__title">Красивая дорога</h2>
+            <span class="reasons__number">№ 4</span>
+            <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          </div>
+          <div class="reasons__item">
+            <h2 class="reasons__title">Мало туристов</h2>
+            <span class="reasons__number">№ 5</span>
+            <p class="reasons__description">Большинство едет в Гранд-Каньон и толпится там</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hotel-search">
+        <h3 class="hotel-search__title">Заинтересовались?</h3>
+        <p class="hotel-search__description">Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button hotel-search__button">Найти гостиницу</a>
+      </section>
+      <div class="map">
+        <iframe  class="map__content"
+                 width="1200"
+                 height="593"
+                 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137"
+                 allowfullscreen>
+        </iframe>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <b class="footer__hashtag">#VisitSedona</b>
+      <div class="footer__social social">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+            <a class="social__link social__link--youtube" href="#">Youtube</a>
+      </div>
+      <div class="footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
   </body>
 </html>
