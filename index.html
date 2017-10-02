@@ -34,11 +34,11 @@
     <main class="page-main">
       <section class="intro intro--index">
           <img src="http://placehold.it" alt="Sedona-welcome">
-          <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="welcomr__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
 
       <section class="reasons">
+        <h1 class="reasons__main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="reasons__main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <div class="reasons__row reasons__row--blue">
           <div class="reasons__item">
             <h2 class="reasons__title">Настоящий городок</h2>
@@ -99,14 +99,16 @@
         <h3 class="hotel-search__title">Заинтересовались?</h3>
         <p class="hotel-search__description">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button class="button hotel-search__button" type="button"><a>Найти гостиницу</a></button>
+        <a class="button hotel-search__button">Найти гостиницу</a>
       </section>
-      <iframe  class="page__map"
-               width="1200"
-               height="593"
-               src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137"
-               allowfullscreen>
-      </iframe>
+      <div class="page__map">
+        <iframe  class="page__map"
+                 width="1200"
+                 height="593"
+                 src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137"
+                 allowfullscreen>
+        </iframe>
+      </div>
     </main>
 
     <footer class="footer">
