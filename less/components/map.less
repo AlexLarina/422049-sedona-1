@@ -1,0 +1,20 @@
+.map{
+  outline: 1px solid red;
+  width: 320px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: @bg-white;
+
+  .tablet({
+    width: @tablet-width;
+  });
+
+  .desktop({
+    width: @desktop-width;
+  })
+}
+
+.map img{
+    margin: 0 auto;
+}
