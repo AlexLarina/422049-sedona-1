@@ -80,6 +80,15 @@
   });
 }
 
+.reasons__row--reverse{
+  .tablet({
+      flex-direction: row-reverse;
+  });
+  .desktop({
+      flex-direction: row-reverse;
+  });
+}
+
 .reasons__row.reasons__row--blue .reasons__item--info{
   height: 210px;
 
@@ -148,11 +157,14 @@
 }
 
 .reasons__item.reasons__item--image{
-  height: 260px;
-
+  /*height: 260px;*/
   .tablet({
       height: 260px;
   });
+}
+
+.reasons__item.reasons__item--image img{
+  display: block;
 }
 
 .reasons__item.reasons__item--icon .reasons__title{
@@ -165,9 +177,7 @@
 .reasons__item--icon{
   display: flex;
   flex-direction: row;
-  padding-left: 21px;
   padding-top: 26px;
-  padding-right: 40px;
 
   .tablet({
       flex-direction: column;
@@ -180,60 +190,53 @@
   });
 }
 
+.reasons__item--icon-home{
+  &::before{
+    content: url("../../img/icon-house.svg");
+    margin: 0 auto;
+  }
+}
+
+.reasons__item--icon-gifts{
+  &::before{
+    content: url("../../img/icon-gift.svg");
+    margin: 0 auto;
+  }
+
+  .desktop({
+      order: 3;
+  });
+}
+
+.reasons__item--icon-food{
+  &::before{
+    content: url("../../img/icon-burger.svg");
+    margin: 0 auto;
+  }
+}
+
 .reasons__item--icon:last-child{
   .tablet({
       order: 2;
   });
 }
 
-.reasons__item--icon img{
-  padding-right: 10px;
-  height: 37px;
-  margin: 0 auto;
-  .tablet({
-    padding-right: 0;
-    height: 70px;
-    padding-bottom: 30px;
-  });
-  .desktop({
-    padding-right: 0;
-    height: 70px;
-    padding-bottom: 30px;
-  });
-}
-
-.reasons__item--icon div{
-  padding-top: 14px;
-
-  .tablet({
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-  });
-
-  .desktop({
-    padding-top: 0;
-    display: flex;
-    flex-direction: column;
-
-    text-align: center;
-  });
-}
-
 .reasons__item--icon .reasons__title{
   .tablet({
+      padding-top: 30px;
       padding-bottom: 30px;
+      text-align: center;
   });
   .desktop({
+      padding-top: 30px;
       padding-bottom: 30px;
+      text-align: center;
   });
 }
 .reasons__item--icon .reasons__description{
   .tablet({
     line-height: 21px;
-
+    text-align: center;
     margin: 0;
     padding-bottom: 65px;
     padding-left: 20px;
@@ -242,7 +245,7 @@
 
   .desktop({
     line-height: 21px;
-
+    text-align: center;
     margin: 0;
     padding-bottom: 90px;
     padding-left: 45px;
