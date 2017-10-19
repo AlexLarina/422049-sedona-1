@@ -11,30 +11,35 @@
     <div class="wrapper">
       <header class="header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <a class="main-nav__logo">
-            <img class="main-nav__logo-img" src="img/logo-sedona-mobile.svg" alt="sedona-logo">
-          </a>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="phomo.html">Фото и видео</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
+          <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
+          <div class="main-nav__wrapper">
+            <a class="main-nav__logo">
+              <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+            </a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a>Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="phomo.html">Фото и видео</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active">
+                <a href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
       <main class="page-main">
         <section class="intro">
-            <img src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+            <!--<img src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">-->
+            <img class="intro__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+            <img class="intro__titles" src="img/text-sedona.svg" alt="text-sedona">
+            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
         </section>
 
         <section class="form">
@@ -47,17 +52,17 @@
                 <span class="form__block-title">Представьтесь:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <label class="form__label">Имя<sup>*</sup>
+                    <label class="form__label">Имя<sup>*</sup>:
                       <input class="form__text" type="text" name="name" value="Петр">
                     </label>
                   </li>
                   <li class="form__item">
-                    <label class="form__label">Фамилия<sup>*</sup>
+                    <label class="form__label">Фамилия<sup>*</sup>:
                       <input class="form__text" type="text" name="surname" value="Иванов">
                     </label>
                   </li>
                   <li class="form__item">
-                    <label class="form__label">Отчество
+                    <label class="form__label">Отчество:
                       <input class="form__text" type="text" name="patronymic" value="Александрович">
                     </label>
                   </li>
@@ -67,7 +72,7 @@
                 <span class="form__block-title">Контактная информация:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <label class="form__label">Контактный телефон<sup>*</sup>:
+                    <label class="form__label"><span class="form__label--phone">Контактный</span> телефон<sup>*</sup>:
                       <input class="form__tel" type="tel" name="phone" placeholder="Введите телефон">
                     </label>
                   </li>
@@ -82,7 +87,7 @@
                 <span class="form__block-title">Ваше общее впечатление:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <input class="form__text" type="radio" name="opinion" value="positive" id="positive-opinion">
+                    <input class="form__text" type="radio" name="opinion" value="positive" id="positive-opinion" checked>
                     <label class="form__label" for="positive-opinion">Скорее положительное</label>
                   </li>
                   <li class="form__item">
@@ -121,6 +126,7 @@
                 <textarea name="form__comment" rows="5">Опишите подробно все свои восторги</textarea>
               </div>
               <button class="button form__button" type="submit">Отправить отзыв</button>
+              <p class="form__required-fields"><sup>*</sup> - обязательные поля</p>
             </form>
           </div>
         </section>
@@ -129,13 +135,21 @@
       <footer class="footer">
         <b class="footer__hashtag">#VisitSedona</b>
         <div class="footer__social social">
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-          <a class="social__link social__link--youtube" href="#">Youtube</a>
+          <a class="social__link social__link--twitter" href="#">Twitter
+            <img src="img/icon-twitter.svg" alt="academy-twitter">
+          </a>
+          <a class="social__link social__link--facebook" href="#">Facebook
+            <img src="img/icon-facebook.svg" alt="academy-fb">
+          </a>
+          <a class="social__link social__link--youtube" href="#">Youtube
+            <img src="img/icon-youtube.svg" alt="academy-youtube">
+          </a>
         </div>
         <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img src="img/logo-htmlacademy.svg" alt="html-academy-copyright">
+          </a>
         </div>
       </footer>
 
@@ -143,13 +157,13 @@
         <h2 class="modal__title">Что-то пошло не так!</h2>
         <p class="modal__message">Проверьте поля, выделенные красным, скорее всего
         Вы забыли их заполнить</p>
-        <button class="button modal__button" type="button">ОК</button>
+        <button class="button modal__button modal__button--ok" type="button">ОК</button>
       </section>
       <section class="modal modal--success">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__message">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам.
         В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="button modal__button" type="button">Закрыть окно</button>
+        <button class="button modal__button modal__button--close" type="button">Закрыть окно</button>
       </section>
     </div>
   </body>
