@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <title>Sedona-index</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
     <div class="wrapper">
       <header class="header">
         <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
           <div class="main-nav__wrapper">
             <a class="main-nav__logo">
               <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
@@ -21,7 +21,7 @@
                 <a>Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="phomo.html">Фото и видео</a>
+                <a href="photo.html">Фото и видео</a>
               </li>
               <li class="main-nav__item">
                 <a href="form.html">Форма отзыва</a>
@@ -36,43 +36,48 @@
 
       <main class="page-main">
         <section class="intro intro--index">
-          <img src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+          <img class="intro--index__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+          <img class="intro--index__titles" src="img/text-sedona-index.svg" alt="text-sedona-index">
+          <img class="intro--index__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
         </section>
 
         <section class="reasons">
           <h1 class="reasons__main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
           <p class="reasons__main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <div class="reasons__row reasons__row--blue">
-            <div class="reasons__item">
+            <div class="reasons__item reasons__item--info">
               <h2 class="reasons__title">Настоящий городок</h2>
               <span class="reasons__number">№ 1</span>
-              <p class="reasons__description">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reasons__item reasons__item--image">
-              <img class="reasons__img" src="img/main-city-mobile@1x.jpg" alt="Real-city">
+              <img class="reasons__img" width="320" height="260" src="img/main-city-mobile@1x.jpg" alt="Real-city">
             </div>
           </div>
 
-          <div class="reason__row">
+          <div class="reasons__row">
             <div class="reasons__item reasons__item--icon reasons__item--icon-home">
-              <h2 class="reasons__title">Жилье</h2>
-              <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            </div>
-            <div class="reasons__item reasons__item--icon reasons__item--icon-food">
-              <h2 class="reasons__title">Еда</h2>
-              <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <!--<img src="img/icon-house.svg" alt="home">-->
+                <h2 class="reasons__title">Жилье</h2>
+                <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="reasons__item reasons__item--icon reasons__item--icon-gifts">
-              <h2 class="reasons__title">Сувениры</h2>
-              <p class="reasons__description">Не только китайского, но и местного производства!</p>
+              <!--<img src="img/icon-gift.svg" height="37" alt="home">-->
+                <h2 class="reasons__title">Сувениры</h2>
+                <p class="reasons__description">Не только китайского, но и местного производства!</p>
+            </div>
+            <div class="reasons__item reasons__item--icon reasons__item--icon-food">
+              <!--<img src="img/icon-burger.svg" height="37" alt="home">-->
+                <h2 class="reasons__title">Еда</h2>
+                <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </div>
 
-          <div class="reasons__row reasons__row--blue">
-            <div class="reasons__item">
+          <div class="reasons__row reasons__row--blue reasons__row--reverse">
+            <div class="reasons__item reasons__item--info">
               <h2 class="reasons__title">Там есть мост дьявола</h2>
               <span class="reasons__number">№ 2</span>
-              <p class="reasons__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reasons__item reasons__item--image">
               <img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" alt="Diablo-bridge">
@@ -83,12 +88,12 @@
             <div class="reasons__item">
               <h2 class="reasons__title">Небольшая площадь</h2>
               <span class="reasons__number">№ 3</span>
-              <p class="reasons__description">Все достопримечательности находятся очень близко</p>
+              <p class="reasons__description">Все интересные места находятся очень близко</p>
             </div>
             <div class="reasons__item">
               <h2 class="reasons__title">Красивая дорога</h2>
               <span class="reasons__number">№ 4</span>
-              <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+              <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div class="reasons__item">
               <h2 class="reasons__title">Мало туристов</h2>
@@ -100,14 +105,13 @@
 
         <section class="hotel-search">
           <h3 class="hotel-search__title">Заинтересовались?</h3>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки,
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br/>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button hotel-search__button">Найти гостиницу</a>
+          <a class="button hotel-search__button" href="#">Найти гостиницу</a>
         </section>
         <div class="map">
+          <!--<img class="map__content" src="img/bg-map-mobile@1x.jpg" alt="map">-->
           <iframe  class="map__content"
-                    width="1200"
-                    height="593"
                     src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137"
                     allowfullscreen>
           </iframe>
@@ -117,13 +121,21 @@
       <footer class="footer">
         <b class="footer__hashtag">#VisitSedona</b>
         <div class="footer__social social">
-          <a class="social__link social__link--twitter" href="#">Twitter</a>
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-          <a class="social__link social__link--youtube" href="#">Youtube</a>
+          <a class="social__link social__link--twitter" href="#">Twitter
+            <img src="img/icon-twitter.svg" alt="academy-twitter">
+          </a>
+          <a class="social__link social__link--facebook" href="#">Facebook
+            <img src="img/icon-facebook.svg" alt="academy-fb">
+          </a>
+          <a class="social__link social__link--youtube" href="#">Youtube
+            <img src="img/icon-youtube.svg" alt="academy-youtube">
+          </a>
         </div>
         <div class="footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <img src="img/logo-htmlacademy.svg" alt="html-academy-copyright">
+          </a>
         </div>
       </footer>
     </div>

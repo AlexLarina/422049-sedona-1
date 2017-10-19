@@ -1,32 +1,125 @@
 .main-nav{
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
   padding: 0;
-  background-color: red;
+  background-color: @blue;
 
   .tablet({
-    background-color: green;
+    width: @tablet-width;
+    background-color: @bg-white;
   });
 
   .desktop({
-    background-color: blue;
+    width: @desktop-width;
+    background-color: @bg-white;
   });
 }
+
+.main-nav__wrapper{
+  outline: 1px solid red;
+  position: relative;
+  .tablet({
+      margin-bottom: 0;
+  });
+  .desktop({
+      margin-bottom: 0;
+  });
+}
+
 .main-nav__logo{
+  position: absolute;
+  z-index: 1;
+  /*top: 223px;*/
+  bottom: -83px;
+  left: 109px;
   height: 83px;
+
+  .tablet({
+      top: 0;
+      left: 333px;
+  });
+
+  .desktop({
+      top: 0;
+      left: 545px;
+  });
 }
 
 .main-nav__list{
   margin: 0;
   padding: 0;
-
+  /*height: 223px;*/
   list-style: none;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  .tablet({
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+  });
+  .desktop({
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+  });
 }
 
 .main-nav__item{
+  /*height: 55px;*/
+  /*margin: 0 auto;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  vertical-align: middle;
   border-bottom: 1px solid #678fa8;
+
+  .tablet({
+    border-bottom: none;
+    padding-top: 12px;
+    height: 35px;
+  });
+  .desktop({
+    border-bottom: none;
+    padding-top: 15px;
+    height: 40px;
+  });
+}
+
+.main-nav__item:first-child{
+  .tablet({
+    margin: 0 0 0 48px;
+  });
+  .desktop({
+      margin: 0 0 0 130px;
+  });
+}
+
+.main-nav__item:nth-child(2){
+  .tablet({
+    margin: 0 155px 0 76px;
+  });
+  .desktop({
+    margin: 0 375px 0 150px;
+  });
+}
+
+.main-nav__item:nth-child(3){
+  .tablet({
+    margin: 0 54px 0 47px;
+  });
+  .desktop({
+    margin: 0 130px 0 0;
+  });
+}
+
+.main-nav__item:last-child{
+  .tablet({
+    margin: 0 26px 0 0;
+  });
+  .desktop({
+    margin: 0;
+  });
 }
 
 .main-nav__item a{
@@ -35,17 +128,17 @@
     font-size: 18px;
     line-height: 40px;
     font-weight: bold;
-}
+    text-transform: uppercase;
 
-@media (min-width: @tablet-width) {
-  .page-header__logo {
-    height: 83px;
-  }
-}
+    .tablet({
+      font-size: 14px;
+      line-height: 26px;
+      color: #000000;
+    });
 
-@media (min-width: @desktop-width) {
-
-  .page-header__logo {
-    height: 97px;
-  }
+    .desktop({
+      font-size: 14px;
+      line-height: 26px;
+      color: #000000;
+    });
 }

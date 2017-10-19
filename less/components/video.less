@@ -1,3 +1,99 @@
+.video{
+  outline: 1px solid red;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-bottom: 66px;
+
+  .tablet({
+    width: @tablet-width;
+    padding: 0;
+    padding-top: 65px;
+    padding-bottom: 35px;
+  });
+
+  .desktop({
+    padding-top: 70px;
+    width: @desktop-width;
+  })
+}
+
+.video__title{
+  font-size: 18px;
+  line-height: 26px;
+
+  .tablet({
+      font-size: 30px;
+      line-height: 26px;
+  });
+
+  .desktop({
+    font-size: 30px;
+    line-height: 26px;
+  });
+}
+
+.video__description{
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+
+  .tablet({
+      padding-top: 35px;
+      padding-left: 175px;
+      padding-right: 175px;
+      padding-bottom: 80px;
+  });
+
+  .desktop({
+    padding-left: 390px;
+    padding-right: 390px;
+  });
+}
+
 .video__frame{
+  outline: 1px solid red;
+  height: 200px;
   background: url("../../img/video-mobile@1x.jpg") 0 0 no-repeat;
+  position: relative;
+
+  .tablet({
+    width: 648px;
+    height: 500px;
+    margin: 0 auto;
+  });
+
+  .desktop({
+      width: 800px;
+      height: 500px;
+      margin: 0 auto;
+  });
+}
+
+.video__button{
+  position: absolute;
+  bottom: -65px;
+  height: 64px;
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: @bg-lightgrey;
+
+  .tablet({
+      width: 648px;
+      margin: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.3);
+  });
+
+  .desktop({
+      width: 800px;
+      margin: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.3);
+  });
 }
