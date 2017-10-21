@@ -52,19 +52,16 @@
                 <span class="form__block-title">Представьтесь:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <label class="form__label">Имя<sup>*</sup>:
-                      <input class="form__text" type="text" name="name" value="Петр">
-                    </label>
+                    <label class="form__label" for="user-name">Имя<sup>*</sup>:</label>
+                    <input class="form__text" type="text" name="name" value="Петр" id="user-name">
                   </li>
                   <li class="form__item">
-                    <label class="form__label">Фамилия<sup>*</sup>:
-                      <input class="form__text" type="text" name="surname" value="Иванов">
-                    </label>
+                    <label class="form__label" for="user-surname">Фамилия<sup>*</sup>:</label>
+                    <input class="form__text" type="text" name="surname" value="Иванов" id="user-surname">
                   </li>
                   <li class="form__item">
-                    <label class="form__label">Отчество:
-                      <input class="form__text" type="text" name="patronymic" value="Александрович">
-                    </label>
+                    <label class="form__label" for="">Отчество:</label>
+                    <input class="form__text" type="text" name="patronymic" value="Александрович" id="user-patronymic">
                   </li>
                 </ul>
               </div>
@@ -72,14 +69,12 @@
                 <span class="form__block-title">Контактная информация:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <label class="form__label"><span class="form__label--phone">Контактный</span> телефон<sup>*</sup>:
-                      <input class="form__tel" type="tel" name="phone" placeholder="Введите телефон">
-                    </label>
+                    <label class="form__label form__label--phone" for="user-phone"><span class="form__label--phone-hidden">Контактный</span> телефон<sup>*</sup>:</label>
+                    <input class="form__tel" type="tel" name="phone" placeholder="Введите телефон" id="user-phone">
                   </li>
                   <li class="form__item">
-                    <label class="form__label">Электронная почта<sup>*</sup>:
-                      <input class="form__email" type="email" name="email" placeholder="Введите e-mail">
-                    </label>
+                    <label class="form__label form__label--email" for="user-email">Электронная почта<sup>*</sup>:</label>
+                    <input class="form__email" type="email" name="email" placeholder="Введите e-mail" id="user-email">
                   </li>
                 </ul>
               </div>
@@ -88,14 +83,20 @@
                 <ul class="form__list">
                   <li class="form__item">
                     <input class="form__text" type="radio" name="opinion" value="positive" id="positive-opinion" checked>
+                    <div class="form__radio-checked"></div>
+                    <div class="form__radio-bg"></div>
                     <label class="form__label" for="positive-opinion">Скорее положительное</label>
                   </li>
                   <li class="form__item">
                     <input class="form__text" type="radio" name="opinion" value="negative" id="negative-opinion">
+                    <div class="form__radio-checked"></div>
+                    <div class="form__radio-bg"></div>
                     <label class="form__label" for="negative-opinion">Скорее отрицательное</label>
                   </li>
                   <li class="form__item">
                     <input class="form__text" type="radio" name="opinion" value="neutral" id="neutral-opinion">
+                    <div class="form__radio-checked"></div>
+                    <div class="form__radio-bg"></div>
                     <label class="form__label" for="neutral-opinion">Затрудняюсь ответить</label>
                   </li>
                 </ul>
