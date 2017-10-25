@@ -14,7 +14,10 @@
           <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
           <div class="main-nav__wrapper">
             <a class="main-nav__logo">
-              <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+              </picture>
             </a>
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
@@ -36,9 +39,15 @@
 
       <main class="page-main">
         <section class="intro intro--index">
-          <img class="intro--index__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+          <!--<picture>
+            <source media="(min-width: 1200px)" srcset="">
+            <img class="intro--index__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+          </picture>-->
           <img class="intro--index__titles" src="img/text-sedona-index.svg" alt="text-sedona-index">
-          <img class="intro--index__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <img class="intro--index__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+          </picture>
         </section>
 
         <section class="reasons">
@@ -51,7 +60,10 @@
               <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="reasons__item reasons__item--image">
-              <img class="reasons__img" width="320" height="260" src="img/main-city-mobile@1x.jpg" alt="Real-city">
+              <!--<picture>
+                <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+                <img class="reasons__img" width="320" height="260" src="img/main-city-mobile@1x.jpg" alt="Real-city">
+              </picture>-->
             </div>
           </div>
 
@@ -80,7 +92,7 @@
               <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="reasons__item reasons__item--image">
-              <img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" alt="Diablo-bridge">
+              <!--<img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" alt="Diablo-bridge">-->
             </div>
           </div>
 
