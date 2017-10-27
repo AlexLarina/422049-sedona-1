@@ -68,15 +68,15 @@
 .main-nav__item{
   /*height: 55px;*/
   /*margin: 0 auto;*/
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid #678fa8;
 
   .tablet({
     border-bottom: none;
-    padding-top: 12px;
+    padding-top: 13px;
     height: 35px;
   });
   .desktop({
@@ -97,7 +97,7 @@
 
 .main-nav__item:nth-child(2){
   .tablet({
-    margin: 0 155px 0 76px;
+    margin: 0 157px 0 76px;
   });
   .desktop({
     margin: 0 385px 0 160px;
@@ -106,7 +106,7 @@
 
 .main-nav__item:nth-child(3){
   .tablet({
-    margin: 0 54px 0 47px;
+    margin: 0 54px 0 50px;
   });
   .desktop({
     margin: 0 135px 0 0;
@@ -141,4 +141,7 @@
       line-height: 26px;
       color: #000000;
     });
+}
+.main-nav__item a:hover{
+  color: @blue;
 }

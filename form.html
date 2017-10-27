@@ -14,14 +14,17 @@
           <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
           <div class="main-nav__wrapper">
             <a class="main-nav__logo">
-              <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+              </picture>
             </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a>Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="phomo.html">Фото и видео</a>
+                <a href="photo.html">Фото и видео</a>
               </li>
               <li class="main-nav__item main-nav__item--active">
                 <a href="form.html">Форма отзыва</a>
@@ -37,9 +40,14 @@
       <main class="page-main">
         <section class="intro">
             <!--<img src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">-->
-            <img class="intro__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
+            <!--<img class="intro__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">-->
+
             <img class="intro__titles" src="img/text-sedona.svg" alt="text-sedona">
-            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+            </picture>
         </section>
 
         <section class="form">
@@ -105,18 +113,22 @@
                 <span class="form__block-title">Посещенные достопримечательности:</span>
                 <ul class="form__list">
                   <li class="form__item">
+                    <div class="form__checkbox-bg"></div>
                     <input class="form__text" type="checkbox" name="diablo-bridge" id="diablo-bridge-field" checked>
                     <label class="form__label" for="diablo-bridge">Мост Дьявола</label>
                   </li>
                   <li class="form__item">
+                    <div class="form__checkbox-bg"></div>
                     <input class="form__text" type="checkbox" name="park" id="park-field" checked>
                     <label class="form__label" for="park-field">Слайд-парк</label>
                   </li>
                   <li class="form__item">
+                    <div class="form__checkbox-bg"></div>
                     <input class="form__text" type="checkbox" name="mountain" id="mountain-field">
                     <label class="form__label" for="mountain-field">Гора Колокол</label>
                   </li>
                   <li class="form__item">
+                    <div class="form__checkbox-bg"></div>
                     <input class="form__text" type="checkbox" name="red-mountain" id="red-mountain-field" checked>
                     <label class="form__label" for="red-mountain-field">Красные скалы</label>
                   </li>

@@ -21,7 +21,7 @@
             </a>
             <ul class="main-nav__list">
               <li class="main-nav__item main-nav__item--active">
-                <a>Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
                 <a href="photo.html">Фото и видео</a>
@@ -46,6 +46,7 @@
           <img class="intro--index__titles" src="img/text-sedona-index.svg" alt="text-sedona-index">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
             <img class="intro--index__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
           </picture>
         </section>
@@ -55,6 +56,9 @@
           <p class="reasons__main-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <div class="reasons__row reasons__row--blue">
             <div class="reasons__item reasons__item--info">
+              <div class="reasons__row reasons__row--mobile-triangle">
+                <img src="img/bg-triangle.svg" alt="triangle">
+              </div>
               <h2 class="reasons__title">Настоящий городок</h2>
               <span class="reasons__number">№ 1</span>
               <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -70,26 +74,32 @@
           <div class="reasons__row">
             <div class="reasons__item reasons__item--icon reasons__item--icon-home">
               <!--<img src="img/icon-house.svg" alt="home">-->
-                <h2 class="reasons__title">Жилье</h2>
-                <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <div class="reasons__item--icon-info">
+                  <h2 class="reasons__title">Жилье</h2>
+                  <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </div>
             </div>
             <div class="reasons__item reasons__item--icon reasons__item--icon-gifts">
               <!--<img src="img/icon-gift.svg" height="37" alt="home">-->
+              <div class="reasons__item--icon-info">
                 <h2 class="reasons__title">Сувениры</h2>
-                <p class="reasons__description">Не только китайского, но и местного производства!</p>
+                <p class="reasons__description"><span>Не только китайского,</span> но и местного производства!</p>
+              </div>
             </div>
             <div class="reasons__item reasons__item--icon reasons__item--icon-food">
               <!--<img src="img/icon-burger.svg" height="37" alt="home">-->
+              <div class="reasons__item--icon-info">
                 <h2 class="reasons__title">Еда</h2>
                 <p class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </div>
             </div>
           </div>
 
           <div class="reasons__row reasons__row--blue reasons__row--reverse">
             <div class="reasons__item reasons__item--info">
-              <h2 class="reasons__title">Там есть мост дьявола</h2>
+              <h2 class="reasons__title"><span>Там есть</span> мост дьявола</h2>
               <span class="reasons__number">№ 2</span>
-              <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reasons__description"><span>Да, по нему можно пройти!</span> Если вы осмелитесь, конечно</p>
             </div>
             <div class="reasons__item reasons__item--image">
               <!--<img class="reasons__img" src="img/main-bridge-mobile@1x.jpg" alt="Diablo-bridge">-->
@@ -105,7 +115,7 @@
             <div class="reasons__item">
               <h2 class="reasons__title">Красивая дорога</h2>
               <span class="reasons__number">№ 4</span>
-              <p class="reasons__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="reasons__description"><span>Ехать в Седону из Лас-Вегаса совсем</span> не скучно!</p>
             </div>
             <div class="reasons__item">
               <h2 class="reasons__title">Мало туристов</h2>
