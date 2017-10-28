@@ -13,15 +13,18 @@
         <nav class="main-nav">
           <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
           <div class="main-nav__wrapper">
-            <a class="main-nav__logo">
-              <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+              </picture>
             </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a>Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="phomo.html">Фото и видео</a>
+                <a href="photo.html">Фото и видео</a>
               </li>
               <li class="main-nav__item main-nav__item--active">
                 <a href="form.html">Форма отзыва</a>
@@ -36,10 +39,12 @@
 
       <main class="page-main">
         <section class="intro">
-            <!--<img src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">-->
-            <img class="intro__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
             <img class="intro__titles" src="img/text-sedona.svg" alt="text-sedona">
-            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+            </picture>
         </section>
 
         <section class="form">
@@ -66,15 +71,19 @@
                 </ul>
               </div>
               <div class="form__block form__block--contact-information">
-                <span class="form__block-title">Контактная информация:</span>
+                <span class="form__block-title form__block-title--decorate">Контактная информация:</span>
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__label form__label--phone" for="user-phone"><span class="form__label--phone-hidden">Контактный</span> телефон<sup>*</sup>:</label>
-                    <input class="form__tel" type="tel" name="phone" placeholder="Введите телефон" id="user-phone">
+                    <div class="form__input-wrap form__input-wrap--tel">
+                      <input class="form__tel" type="tel" name="phone" placeholder="Введите телефон" id="user-phone">
+                    </div>
                   </li>
                   <li class="form__item">
                     <label class="form__label form__label--email" for="user-email">Электронная почта<sup>*</sup>:</label>
-                    <input class="form__email" type="email" name="email" placeholder="Введите e-mail" id="user-email">
+                    <div class="form__input-wrap form__input-wrap--email">
+                      <input class="form__email" type="email" name="email" placeholder="Введите e-mail" id="user-email">
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -82,49 +91,43 @@
                 <span class="form__block-title">Ваше общее впечатление:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <input class="form__text" type="radio" name="opinion" value="positive" id="positive-opinion" checked>
-                    <div class="form__radio-checked"></div>
-                    <div class="form__radio-bg"></div>
-                    <label class="form__label" for="positive-opinion">Скорее положительное</label>
+                    <input class="form__radio" type="radio" name="opinion" value="positive" id="positive-opinion" checked>
+                    <label class="form__label form__label--radio" for="positive-opinion">Скорее положительное</label>
                   </li>
                   <li class="form__item">
-                    <input class="form__text" type="radio" name="opinion" value="negative" id="negative-opinion">
-                    <div class="form__radio-checked"></div>
-                    <div class="form__radio-bg"></div>
-                    <label class="form__label" for="negative-opinion">Скорее отрицательное</label>
+                    <input class="form__radio" type="radio" name="opinion" value="negative" id="negative-opinion">
+                    <label class="form__label form__label--radio" for="negative-opinion">Скорее отрицательное</label>
                   </li>
                   <li class="form__item">
-                    <input class="form__text" type="radio" name="opinion" value="neutral" id="neutral-opinion">
-                    <div class="form__radio-checked"></div>
-                    <div class="form__radio-bg"></div>
-                    <label class="form__label" for="neutral-opinion">Затрудняюсь ответить</label>
+                    <input class="form__radio" type="radio" name="opinion" value="neutral" id="neutral-opinion">
+                    <label class="form__label form__label--radio" for="neutral-opinion">Затрудняюсь ответить</label>
                   </li>
                 </ul>
               </div>
               <div class="form__block form__block--sights">
-                <span class="form__block-title">Посещенные достопримечательности:</span>
+                <span class="form__block-title form__block-title--decorate">Посещенные достопримечательности:</span>
                 <ul class="form__list">
                   <li class="form__item">
-                    <input class="form__text" type="checkbox" name="diablo-bridge" id="diablo-bridge-field" checked>
-                    <label class="form__label" for="diablo-bridge">Мост Дьявола</label>
+                    <input class="form__checkbox" type="checkbox" name="diablo-bridge" id="diablo-bridge-field" checked>
+                    <label class="form__label form__label--checkbox" for="diablo-bridge">Мост Дьявола</label>
                   </li>
                   <li class="form__item">
-                    <input class="form__text" type="checkbox" name="park" id="park-field" checked>
-                    <label class="form__label" for="park-field">Слайд-парк</label>
+                    <input class="form__checkbox" type="checkbox" name="park" id="park-field" checked>
+                    <label class="form__label form__label--checkbox" for="park-field">Слайд-парк</label>
                   </li>
                   <li class="form__item">
-                    <input class="form__text" type="checkbox" name="mountain" id="mountain-field">
-                    <label class="form__label" for="mountain-field">Гора Колокол</label>
+                    <input class="form__checkbox" type="checkbox" name="mountain" id="mountain-field">
+                    <label class="form__label form__label--checkbox" for="mountain-field">Гора Колокол</label>
                   </li>
                   <li class="form__item">
-                    <input class="form__text" type="checkbox" name="red-mountain" id="red-mountain-field" checked>
-                    <label class="form__label" for="red-mountain-field">Красные скалы</label>
+                    <input class="form__checkbox" type="checkbox" name="red-mountain" id="red-mountain-field" checked>
+                    <label class="form__label form__label--checkbox" for="red-mountain-field">Красные скалы</label>
                   </li>
                 </ul>
               </div>
               <div class="form__block form__block--comment">
-                <span class="form__block-title">Опишите свои эмоции:</span>
-                <textarea name="form__comment" rows="5">Опишите подробно все свои восторги</textarea>
+                <span class="form__block-title form__block-title--decorate">Опишите свои эмоции:</span>
+                <textarea class="form__comment">Опишите подробно все свои восторги</textarea>
               </div>
               <button class="button form__button" type="submit">Отправить отзыв</button>
               <p class="form__required-fields"><sup>*</sup> - обязательные поля</p>

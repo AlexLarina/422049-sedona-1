@@ -13,15 +13,18 @@
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
-            <a class="main-nav__logo">
-              <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+            <a class="main-nav__logo" href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+                <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
+              </picture>
             </a>
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a>Главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item main-nav__item--active">
-                <a href="phomo.html">Фото и видео</a>
+                <a href="photo.html">Фото и видео</a>
               </li>
               <li class="main-nav__item">
                 <a href="form.html">Форма отзыва</a>
@@ -36,10 +39,12 @@
 
       <main class="page-main">
         <section class="intro">
-            <!--<img src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">-->
-            <img class="intro__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
             <img class="intro__titles" src="img/text-sedona.svg" alt="text-sedona">
-            <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img class="intro__triangle" src="img/bg-intro-triangle-mobile.svg" alt="triangle-sedona-index">
+            </picture>
         </section>
 
         <section class="photo">
@@ -48,62 +53,86 @@
               Фотографии помогут вам позабыть о политике и экономике.</p>
             <ul class="photo__list">
               <li class="photo__item photo__item--main">
-                <a href="#" class="photo-img"><img src="img/photo-sunset-mobile@1x.jpg" alt="landscape"></a>
+                <a href="#" class="photo-img">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                    <img src="img/photo-sunset-mobile@1x.jpg" alt="landscape">
+                  </picture>
+                </a>
                 <div class="photo__wrapper">
-                  <h2 class="photo__name">Неродные просторы</h2>
                   <div class="photo__wrapper--info">
+                    <h2 class="photo__name">Неродные просторы</h2>
                     <p class="photo__author">Автор фото: Борис</p>
-                    <div class="photo__like">
-                      <button class="photo__icon-like" type="submit">
-                        <img src="img/icon-like.svg" alt="like">
-                      </button>
-                      <span class="photo__likes-number">1350</span>
-                    </div>
+                  </div>
+                  <div class="photo__like">
+                    <button class="photo__icon-like" type="submit">
+                      <img src="img/icon-like.svg" alt="like">
+                    </button>
+                    <span class="photo__likes-number">1350</span>
                   </div>
                 </div>
               </li>
               <li class="photo__item">
-                <a href="#" class="photo-img"><img src="img/photo-cactus-mobile@1x.jpg" alt="flora"></a>
+                <a href="#" class="photo-img">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                    <img src="img/photo-cactus-mobile@1x.jpg" alt="landscape">
+                  </picture>
+                </a>
                 <div class="photo__wrapper">
-                  <h2 class="photo__name">Местная растительность</h2>
                   <div class="photo__wrapper--info">
+                    <h2 class="photo__name">Местная растительность</h2>
                     <p class="photo__author">Автор фото: Сергей</p>
-                    <div class="photo__like">
-                      <button class="photo__icon-like" type="submit">
-                        <img src="img/icon-like.svg" alt="like">
-                      </button>
-                      <span class="photo__likes">143</span>
-                    </div>
+                  </div>
+                  <div class="photo__like">
+                    <button class="photo__icon-like" type="submit">
+                      <img src="img/icon-like.svg" alt="like">
+                    </button>
+                    <span class="photo__likes-number">143</span>
                   </div>
                 </div>
               </li>
               <li class="photo__item">
-                <a href="#" class="photo-img"><img src="img/photo-roads-mobile@1x.jpg" alt="north way"></a>
+                <a href="#" class="photo-img">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                    <img src="img/photo-roads-mobile@1x.jpg" alt="landscape">
+                  </picture>
+                </a>
                 <div class="photo__wrapper">
-                  <h2 class="photo__name">Дорога на Север</h2>
                   <div class="photo__wrapper--info">
+                    <h2 class="photo__name">Дорога на Север</h2>
                     <p class="photo__author">Автор фото: Петр</p>
-                    <div class="photo__like">
-                      <button class="photo__icon-like" type="submit">
-                        <img src="img/icon-like.svg" alt="like">
-                      </button>
-                      <span class="photo__likes">96</span>
-                    </div>
+                  </div>
+                  <div class="photo__like">
+                    <button class="photo__icon-like" type="submit">
+                      <img src="img/icon-like.svg" alt="like">
+                    </button>
+                    <span class="photo__likes-number">96</span>
                   </div>
                 </div>
               </li>
               <li class="photo__item">
-                <a href="#" class="photo-img"><img src="img/photo-bridge-mobile@1x.jpg" alt="diablo bridge"></a>
+                <a href="#" class="photo-img">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                    <img src="img/photo-bridge-mobile@1x.jpg" alt="landscape">
+                  </picture>
+                </a>
                 <div class="photo__wrapper">
-                  <h2 class="photo__name">Мост дьявола</h2>
                   <div class="photo__wrapper--info">
+                    <h2 class="photo__name">Мост дьявола</h2>
                     <p class="photo__author">Автор фото: Антон</p>
-                    <div class="photo__like">
-                      <button class="photo__icon-like" type="submit">
-                        <img src="img/icon-like.svg" alt="like">
-                      </button>
-                      <span class="photo__likes">254</span>
-                    </div>
+                  </div>
+                  <div class="photo__like">
+                    <button class="photo__icon-like" type="submit">
+                      <img src="img/icon-like.svg" alt="like">
+                    </button>
+                    <span class="photo__likes-number">254</span>
                   </div>
                 </div>
               </li>
@@ -116,9 +145,18 @@
           пока они не подорожали в очередной раз!</p>
           <div class="video__frame">
             <div class="video__button">
-              <button class="video__replay" type="button"></button>
-              <button class="video__subtitles" type="button"></button>
-              <button class="video__fullscreen" type="button"></button>
+              <div class="video__range-controls">
+              <div class="video__range-toggle"></div>
+            </div>
+              <button class="video__replay" type="button">
+                <img src="img/icon-video-replay.svg" alt="replay">
+              </button>
+              <button class="video__subtitles" type="button">
+                <img src="img/icon-video-subtitles.svg" alt="subtitles">
+              </button>
+              <button class="video__fullscreen" type="button">
+                <img src="img/icon-video-fullscreen.svg" alt="fullscreen">
+              </button>
             </div>
           </div>
         </section>

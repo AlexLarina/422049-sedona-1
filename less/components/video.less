@@ -4,7 +4,7 @@
   margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 66px;
 
   .tablet({
@@ -37,7 +37,7 @@
 
 .video__description{
   margin: 0;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
@@ -60,17 +60,19 @@
   height: 200px;
   background: url("../../img/video-mobile@1x.jpg") 0 0 no-repeat;
   position: relative;
-
+  background-size: cover;
   .tablet({
     width: 648px;
     height: 500px;
     margin: 0 auto;
+    background: url("../../img/video-tablet@1x.jpg") 0 0 no-repeat;
   });
 
   .desktop({
-      width: 800px;
-      height: 500px;
-      margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background: url("../../img/video-desktop@1x.jpg") 0 0 no-repeat;
   });
 }
 
@@ -82,18 +84,56 @@
   margin-left: 20px;
   margin-right: 20px;
   background-color: @bg-lightgrey;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   .tablet({
       width: 648px;
       margin: 0;
       bottom: 0;
       background-color: rgba(0,0,0,0.3);
+      flex-direction: row;
+      justify-content: space-around;
   });
 
   .desktop({
       width: 800px;
+      height: 92px;
       margin: 0;
       bottom: 0;
       background-color: rgba(0,0,0,0.3);
+      flex-direction: row;
+      justify-content: space-around;
+  });
+}
+.video__replay{
+  .tablet({
+    order: -1;
+  });
+  .desktop({
+    order: -1;
+  });
+}
+.video__range-controls{
+	position: relative;
+  left: 0;
+  width: 67.5%;
+  height: 2px;
+  background-color: yellow;
+}
+
+.video__range-toggle{
+	position: absolute;
+	top: -5px;
+  left: 21%;
+	width: 10px;
+	height: 10px;
+
+	background: #ffffff;
+	border-radius: 50%;
+	cursor: pointer;
+
+  .tablet({
+    top: -4px;
   });
 }

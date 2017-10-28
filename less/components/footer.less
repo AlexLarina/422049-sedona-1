@@ -6,7 +6,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
 
   .tablet({
     width: @tablet-width;
@@ -31,12 +31,13 @@
     text-transform: uppercase;
     font-size: 21px;
     line-height: 26px;
-    margin-top: 48px;
+    margin-top: 50px;
+    margin-bottom: 35px;
     .tablet({
         margin-top: 0;
     });
     .desktop({
-        margin-top: 0;
+        margin-top: 30px;
     });
 }
 
@@ -44,6 +45,13 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin-bottom: 35px;
+      .tablet({
+          margin-bottom: 0;
+      });
+      .desktop({
+          margin-bottom: 0;
+      });
 }
 
 .footer__social a{
@@ -72,6 +80,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
+    text-transform: uppercase;
 }
 .copyright__link{
   font-size: 0;

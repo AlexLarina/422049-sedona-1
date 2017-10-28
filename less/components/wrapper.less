@@ -1,4 +1,12 @@
 .wrapper{
   background-color: #ffffff;
+  width: @mobile-width;
+  margin: 0 auto;
+  box-shadow: -3px 0 15px 0 rgba(0, 0, 0, 0.2);
+  .tablet({
+    width: @tablet-width;
+  });
+  .desktop({
+    width:@desktop-width;
+  });
 }
-/*comment*/
