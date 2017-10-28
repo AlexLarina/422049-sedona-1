@@ -31,17 +31,20 @@
   z-index: 1;
   /*top: 223px;*/
   bottom: -83px;
-  left: 109px;
+  left: 50%;
+  transform: translateX(-50%);
   height: 83px;
 
   .tablet({
       top: 0;
-      left: 333px;
+      left: 50%;
+      transform: translateX(-50%);
   });
 
   .desktop({
       top: 0;
-      left: 505px;
+      left: 50%;
+      transform: translateX(-50%);
   });
 }
 
@@ -143,5 +146,10 @@
     });
 }
 .main-nav__item a:hover{
-  color: @blue;
+  .tablet({
+    color: @blue;
+  });
+  .desktop({
+    color: @blue;
+  });
 }

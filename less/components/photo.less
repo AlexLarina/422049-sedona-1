@@ -151,7 +151,18 @@
 
 .photo__wrapper{
   padding-left: 20px;
+  .tablet({
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  });
   .desktop({
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     padding-left: 0;
     width: 100%;
     position: absolute;
@@ -172,25 +183,24 @@
   padding-top: 5px;
 
   .desktop({
-      padding-top: 0;
-      color: #ffffff;
-      opacity: 1;
-      padding-top: 15px;
+    color: #ffffff;
+    opacity: 1;
+    padding-top: 15px;
   });
 }
 
 .photo__wrapper--info{
-
   .tablet({
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      flex-direction: column;
+      justify-content: flex-start;
   });
 
   .desktop({
+    padding-left: 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     color: #ffffff;
   });
 }
@@ -208,11 +218,14 @@
 }
 
 .photo__like{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   .tablet({
-      padding-right: 20px;
+    padding-right: 20px;
   });
   .desktop({
-      padding-right: 20px;
+    padding-right: 20px;
   });
 }
 .photo__likes-number{
@@ -222,7 +235,10 @@
   padding-left: 10px;
 
   .tablet({
-      padding-left: 5px;
+      padding-left: 10px;
+  });
+  .desktop({
+    color: #ffffff;
   });
 }
 .photo__icon-like{
@@ -236,6 +252,7 @@
   });
 
   .desktop({
-      background-color: rgba(0,0,0,0.3);
+      /*background-color: rgba(0,0,0,0.3);*/
+      background-color: transparent;
   });
 }
