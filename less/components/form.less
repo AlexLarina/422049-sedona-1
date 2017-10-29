@@ -106,6 +106,7 @@
   font-family: inherit;
   font-weight: bold;
   font-size: 18px;
+  box-sizing: border-box;
   .tablet({
       margin-left: 17px;
   });
@@ -122,13 +123,19 @@ input::-moz-placeholder {
   opacity: 1;
 }
 
-input[type="text"]{
+.form__text{
   .tablet({
     margin-right: 0;
   });
   .desktop({
     margin-right: 0;
   });
+}
+.form__text:hover{
+  background-color: #e5e5e5;
+}
+.form__text:active{
+  background-color: #ffffff;
 }
 .form__tel, .form__email{
   margin: 0;
@@ -187,7 +194,7 @@ input[name="phone"],input[name="email"]{
     });
 
     .desktop({
-        width: 920px;
+        width: 960px;
         height: 125px;
         margin: 0;
         margin-top: 60px;
@@ -375,6 +382,7 @@ input[name="phone"],input[name="email"]{
 .form__block--contact-information .form__label{
   padding-left: 20px;
   padding-bottom: 10px;
+  cursor: pointer;
   .desktop({
     padding-left: 0;
     margin-right: 15px;
@@ -524,6 +532,7 @@ input[name="phone"],input[name="email"]{
     position: relative;
     padding-left: 75px;
     padding-bottom: 38px;
+    cursor: pointer;
 }
 .form__label--radio:before {
     position: absolute;
@@ -638,6 +647,7 @@ input[name="phone"],input[name="email"]{
     position: relative;
     padding-left: 75px;
     padding-bottom: 38px;
+    cursor: pointer;
 }
 .form__label--checkbox:before {
     position: absolute;
@@ -732,6 +742,7 @@ input[type="checkbox"]{
   line-height: 26px;
   text-transform: none;
   font-weight: bold;
+  cursor: pointer;
 }
 .form__block-title{
   font-weight: bold;
@@ -759,4 +770,15 @@ input[type="checkbox"]{
 
 .form__label{
   text-transform: uppercase;
+}
+.form__label--radio:hover::before,
+.form__label--checkbox:hover::before{
+  background-color: #e5e5e5;
+}
+.form__label--radio:active::before,
+.form__label--checkbox:active::before{
+  background-color: #d5d5d5;
+}
+.form__label--radio:active::after{
+  background-color: #a4a4a4;
 }

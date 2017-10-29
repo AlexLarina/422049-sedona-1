@@ -1,5 +1,4 @@
 .reasons{
-  outline: 1px solid red;
   width: 320px;
   margin: 0 auto;
 
@@ -87,7 +86,7 @@
   });
 }
 
-.reasons__row.reasons__row--blue .reasons__item--info{
+.reasons__row--blue .reasons__item--info{
   height: 210px;
   position: relative;
   padding-bottom: 25px;
@@ -101,6 +100,9 @@
       height: 255px;
       padding-bottom: 0;
   });
+}
+.reasons__row--reverse .reasons__item--info{
+  height: 165px;
 }
 .reasons__item--image{
   background-image: url(../../img/main-city-mobile@1x.jpg);
@@ -166,6 +168,9 @@
       padding-bottom: 10px;
   });
 }
+.reasons__row--reverse .reasons__title{
+  padding-top: 40px;
+}
 .reasons__row--blue  span{
   .desktop({
       display: block;
@@ -185,8 +190,6 @@
 .reasons__row--blue .reasons__description{
   color: #ffffff;
   text-transform: uppercase;
-  /*width: 290px;*/
-
   margin: 0 auto;
   padding-top: 10px;
   padding-left: 20px;
@@ -212,11 +215,11 @@
   });
 }
 
-.reasons__item.reasons__item--image img{
+.reasons__item--image img{
   display: block;
 }
 
-.reasons__item.reasons__item--icon .reasons__title{
+.reasons__item--icon .reasons__title{
   text-transform: uppercase;
   font-size: 18px;
   .tablet({
@@ -226,22 +229,24 @@
       font-size: 21px;
   });
 }
-.reasons__item.reasons__item--icon .reasons__description{
+.reasons__item--icon .reasons__description{
   text-transform: uppercase;
+  line-height: 21px;
 }
 
 .reasons__item--icon{
   display: flex;
   flex-direction: row;
   padding-top: 26px;
-
+  padding-left: 20px;
   .tablet({
+    padding-left: 0;
       flex-direction: column;
-      justify-content: space-between;
       padding-top: 60px;
       width: 33%;
   });
   .desktop({
+    padding-left: 0;
       flex-direction: column;
       justify-content: space-between;
       padding-top: 60px;
@@ -252,24 +257,55 @@
   display: flex;
   flex-direction: column;
   padding-top: 10px;
+  padding-left: 10px;
   .tablet({
     padding-top: 0;
+    padding-left: 0;
   });
   .desktop({
     padding-top: 0;
+    padding-left: 0;
   });
 }
-.reasons__item--icon-home{
-  &::before{
-    content: url("../../img/icon-house.svg");
+.reasons__item--icon-home::before{
+    content: "";
+    background-image: url("../../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 37px;
+    width: 65px;
+    height: 37px;
     margin: 0 auto;
-  }
+    .tablet({
+      background-size: 75px 75px;
+      width: 75px;
+      height: 75px;
+    });
+    .desktop({
+      background-size: 75px 75px;
+      width: 75px;
+      height: 75px;
+    });
 }
 
 .reasons__item--icon-gifts{
   &::before{
-    content: url("../../img/icon-gift.svg");
+    content: "";
+    background-image: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 37px;
+    width: 65px;
+    height: 37px;
     margin: 0 auto;
+    .tablet({
+      background-size: 75px 75px;
+      width: 75px;
+      height: 75px;
+    });
+    .desktop({
+      background-size: 75px 75px;
+      width: 75px;
+      height: 75px;
+    });
   }
   .tablet({
       order: 3;
@@ -281,14 +317,45 @@
 
 .reasons__item--icon-food{
   &::before{
-    content: url("../../img/icon-burger.svg");
+    content: "";
+    background-image: url("../../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-size: 40px 37px;
+    width: 90px;
+    height: 37px;
     margin: 0 auto;
+    .tablet({
+      background-size: 75px 75px;
+      width: 75px;
+      height: 75px;
+    });
+    .desktop({
+      background-size: 75px 75px;
+      width: 75px;
+      height: 75px;
+    });
   }
 }
-
+.reasons__item--icon-gifts, .reasons__item--icon-food{
+  padding-top: 20px;
+  .tablet({
+    padding-top: 60px;
+  });
+  .desktop({
+    padding-top: 60px;
+  });
+}
 .reasons__item--icon:last-child{
+  padding-right: 40px;
+  padding-bottom: 40px;
   .tablet({
       order: 2;
+      padding-right: 0;
+      padding-bottom: 0;
+  });
+  .desktop({
+    padding-right: 0;
+    padding-bottom: 0;
   });
 }
 
@@ -326,12 +393,6 @@
   });
 }
 
-/*.reasons__item--icon .reasons__description:nth-child(2){
-  .tablet({
-    padding-left: 5px;
-    padding-right: 5px;
-  });
-}*/
 .reasons__item--icon .reasons__description:nth-child(2) span{
   .desktop({
       display: block;
@@ -339,7 +400,7 @@
 }
 .reasons__row.reasons__row--grey{
   background-color: #eeeeee;
-
+  margin: 0;
   .tablet({
     padding-top: 45px;
     height: 205px;
@@ -355,13 +416,12 @@
 
 .reasons__row--grey .reasons__item{
   border-bottom: 1px solid #d6d6d6;
-  width: 280px;
-  /*margin: 0 auto;*/
+  width: 320px;
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
   display: flex;
   flex-direction: column;
-
   .tablet({
     height: 200px;
     border-bottom: none;
@@ -377,8 +437,8 @@
 
 .reasons__row--grey .reasons__title{
   padding-top: 30px;
-  padding-bottom: 15px;
-
+  padding-bottom: 5px;
+  font-size: 18px;
   .tablet({
     padding-top: 0;
     padding-bottom: 10px;
@@ -395,6 +455,7 @@
     padding-right: 120px;
   });
 }
+
 .reasons__row--grey .reasons__number{
   &::before{
     content: "\2012";
@@ -407,9 +468,11 @@
 }
 .reasons__row--grey .reasons__description{
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 35px;
-
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 21px;
   .tablet({
     line-height: 21px;
     margin: 0;
@@ -434,4 +497,27 @@
 }
 .reasons__row--grey .reasons__item:last-child{
   border-bottom: none;
+}
+
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .reasons__item--image{
+      background-image: url("../../img/main-city-mobile@2x.jpg");
+     .tablet({
+       background-image: url("../../img/main-city-tablet@2x.jpg");
+     });
+     .desktop({
+       background-image: url("../../img/main-city-desktop@2x.jpg");
+     });
+     .reasons__row--reverse .reasons__item--image{
+        background-image: url("../../img/main-bridge-mobile@2x.jpg");
+      .tablet({
+        background-image: url("../../img/main-bridge-tablet@2x.jpg");
+      });
+      .desktop({
+        background-image: url("../../img/main-bridge-desktop@2x.jpg");
+      });
+   }
+ }
 }
