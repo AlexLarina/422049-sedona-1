@@ -11,7 +11,10 @@
     <div class="wrapper">
       <header class="header">
         <nav class="main-nav">
-          <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
+          <a class="main-nav__toggle main-nav__toggle--closed">
+            <button class="main-nav__toggle-button" type="button">Открыть меню
+            </button>
+          </a>
           <div class="main-nav__wrapper">
             <a class="main-nav__logo" href="index.html">
               <picture>
@@ -39,10 +42,6 @@
 
       <main class="page-main">
         <section class="intro intro--index">
-          <!--<picture>
-            <source media="(min-width: 1200px)" srcset="">
-            <img class="intro--index__bg" src="img/bg-back-mobile@1x.jpg" alt="Sedona-welcome">
-          </picture>-->
           <img class="intro--index__titles" src="img/text-sedona-index.svg" alt="text-sedona-index">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
@@ -127,15 +126,12 @@
 
         <section class="hotel-search">
           <h3 class="hotel-search__title">Заинтересовались?</h3>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br/>
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button hotel-search__button" href="#">Найти гостиницу</a>
         </section>
         <div class="map">
-          <!--<img class="map__content" src="img/bg-map-mobile@1x.jpg" alt="map">-->
-          <iframe  class="map__content"
-                    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137"
-                    allowfullscreen>
+          <iframe class="map__content" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137" allowfullscreen="">
           </iframe>
         </div>
       </main>
@@ -161,5 +157,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

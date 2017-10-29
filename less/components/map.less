@@ -27,3 +27,16 @@
   border: none;
   width: 100%;
 }
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .map{
+     background-image: url("../../img/bg-map-mobile@2x.jpg");
+     .tablet({
+       background-image: url("../../img/bg-map-tablet@2x.jpg");
+     });
+     .desktop({
+       background-image: url("../../img/bg-map-desktop@2x.jpg");
+     });
+   }
+}

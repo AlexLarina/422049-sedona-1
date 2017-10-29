@@ -22,7 +22,7 @@
   });
 }
 
-.intro.intro--index{
+.intro--index{
   width: @mobile-width;
   height: 387px;
   margin: 0 auto;
@@ -137,4 +137,17 @@
       width: @desktop-width;
       bottom: 0;
   });
+}
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+   .intro, .intro--index {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+    .tablet({
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+    });
+    .desktop({
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+    });
+  }
 }

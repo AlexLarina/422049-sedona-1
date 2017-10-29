@@ -153,3 +153,61 @@
     color: @blue;
   });
 }
+.main-nav__item a:active{
+  .tablet({
+    color: #cacaca;
+  });
+  .desktop({
+    color: #cacaca;
+  });
+}
+.main-nav__item--active a{
+  .tablet({
+    color: #a1968f;
+  });
+  .desktop({
+    color: #a1968f;
+  });
+}
+.main-nav__item--active a:hover{
+  .tablet({
+    color: #604e43;
+  });
+  .desktop({
+    color: #604e43;
+  });
+}
+.main-nav__item--active a:active{
+  .tablet({
+    color: #dbd8d5;
+  });
+  .desktop({
+    color: #dbd8d5;
+  });
+}
+.main-nav__toggle {
+  border: none;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: blue;
+  font-size: 0;
+  background-image: url("../../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+
+  .tablet({
+      display: none;
+  });
+  .desktop({
+      display: none;
+  });
+  /*.obertka.active & {
+    background: red;
+  }*/
+}
+.main-nav__toggle--closed{
+  background: red;
+}

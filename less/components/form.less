@@ -122,13 +122,19 @@ input::-moz-placeholder {
   opacity: 1;
 }
 
-input[type="text"]{
+.form__text{
   .tablet({
     margin-right: 0;
   });
   .desktop({
     margin-right: 0;
   });
+}
+.form__text:hover{
+  background-color: #e5e5e5;
+}
+.form__text:active{
+  background-color: #ffffff;
 }
 .form__tel, .form__email{
   margin: 0;
@@ -759,4 +765,8 @@ input[type="checkbox"]{
 
 .form__label{
   text-transform: uppercase;
+}
+.form__label--radio:before:hover,
+.form__label--checkbox:before:hover{
+  background-color: #e5e5e5;
 }

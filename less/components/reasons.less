@@ -339,7 +339,7 @@
 }
 .reasons__row.reasons__row--grey{
   background-color: #eeeeee;
-
+  margin: 0;
   .tablet({
     padding-top: 45px;
     height: 205px;
@@ -355,13 +355,12 @@
 
 .reasons__row--grey .reasons__item{
   border-bottom: 1px solid #d6d6d6;
-  width: 280px;
-  /*margin: 0 auto;*/
+  width: 320px;
+  margin: 0;
   text-transform: uppercase;
   text-align: center;
   display: flex;
   flex-direction: column;
-
   .tablet({
     height: 200px;
     border-bottom: none;
@@ -378,7 +377,7 @@
 .reasons__row--grey .reasons__title{
   padding-top: 30px;
   padding-bottom: 15px;
-
+  font-size: 18px;
   .tablet({
     padding-top: 0;
     padding-bottom: 10px;
@@ -434,4 +433,27 @@
 }
 .reasons__row--grey .reasons__item:last-child{
   border-bottom: none;
+}
+
+@media
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .reasons__item--image{
+      background-image: url("../../img/main-city-mobile@2x.jpg");
+     .tablet({
+       background-image: url("../../img/main-city-tablet@2x.jpg");
+     });
+     .desktop({
+       background-image: url("../../img/main-city-desktop@2x.jpg");
+     });
+     .reasons__row--reverse .reasons__item--image{
+        background-image: url("../../img/main-bridge-mobile@2x.jpg");
+      .tablet({
+        background-image: url("../../img/main-bridge-tablet@2x.jpg");
+      });
+      .desktop({
+        background-image: url("../../img/main-bridge-desktop@2x.jpg");
+      });
+   }
+ }
 }
