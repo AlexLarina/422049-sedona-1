@@ -1,5 +1,4 @@
 .footer{
-  outline: 1px solid red;
   width: 320px;
   height: 243px;
   margin: 0 auto;
@@ -34,7 +33,8 @@
     margin-top: 50px;
     margin-bottom: 35px;
     .tablet({
-        margin-top: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     });
     .desktop({
         margin-top: 30px;
@@ -87,7 +87,21 @@
 .copyright__link{
   font-size: 0;
   padding-top: 15px;
+  width: 34px;
+  height: 27px;
   .tablet({
-    padding-top: 15px;
+    padding-top: 0;
   });
+  .desktop({
+    padding-top: 0;
+  });
+}
+.copyright__icon{
+  fill: #000000;
+}
+.copyright__icon:hover{
+  fill: @blue;
+}
+.copyright__icon:active{
+  fill: #b2b2b2;
 }

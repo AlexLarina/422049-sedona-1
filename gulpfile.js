@@ -90,8 +90,8 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("less/**/*.less", ["style"]);
-  gulp.watch("*.html", ["html"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html"]).on("change", server.reload);
+  //gulp.watch("*.html").on("change", server.reload);
 });
 
 gulp.task("build", function (done) {
